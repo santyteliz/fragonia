@@ -10,7 +10,7 @@
  * escriben directamente a Fragonia con el mensaje correspondiente.
  */
 window.FRAGONIA_CONFIG = {
-  whatsapp: '',
+  whatsapp: '5492291419212',
 
   mensajes: {
     pedido: '¡Hola Fragonia! Quería hacer una consulta / un pedido.',
