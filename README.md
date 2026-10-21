@@ -9,7 +9,7 @@ Sitio estático (HTML + CSS + JavaScript, sin dependencias) para Fragonia Panade
 **Opción 2: servidor local** (recomendado para probar como si estuviera publicado). Requiere [Node.js](https://nodejs.org) 18 o superior:
 
 ```bash
-npm start
+npm run dev
 ```
 
 Después abrir http://localhost:4321
@@ -34,7 +34,7 @@ css/styles.css      Estilos, paleta y responsive (celular ≤ 640 px, tablet ≤
 js/config.js        Número de WhatsApp y mensajes
 js/main.js          Menú móvil, header al hacer scroll, apariciones y enlaces de WhatsApp
 assets/img/         Logo y fotografías (cada foto en 1400 px y versión -800 px)
-server.mjs          Servidor local mínimo para `npm start`
+tools/dev-server.mjs  Servidor local mínimo para `npm run dev`
 ```
 
 ## Reemplazar las fotografías
@@ -43,4 +43,4 @@ Las fotos actuales son **ilustrativas** (Unsplash, licencia libre). Para usar fo
 
 ## Publicar
 
-Al ser estático, se puede subir tal cual a cualquier hosting (Netlify, Vercel, GitHub Pages, Hostinger, etc.): basta con subir la carpeta completa. `server.mjs` y `package.json` sólo se usan para verlo en local.
+Al ser estático, se puede subir tal cual a cualquier hosting (Netlify, Vercel, GitHub Pages, Hostinger, etc.): basta con subir la carpeta completa. En Vercel: importar el repo con Framework Preset **Other**, sin build command. `tools/dev-server.mjs` y `package.json` sólo se usan para verlo en local.

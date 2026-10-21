@@ -1,11 +1,11 @@
 // Servidor estático mínimo para ver la web en local (sin dependencias).
-// Uso: node server.mjs   →   http://localhost:4321
+// Uso: npm run dev  (o: node tools/dev-server.mjs)   →   http://localhost:4321
 import { createServer } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
 import { extname, join, normalize, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const root = resolve(fileURLToPath(new URL('.', import.meta.url)));
+const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const port = Number(process.env.PORT) || 4321;
 
 const types = {

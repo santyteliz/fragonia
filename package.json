@@ -5,6 +5,6 @@
   "description": "Web de Fragonia Panadería Artesanal (Miramar, Buenos Aires). Sitio estático HTML/CSS/JS.",
   "type": "module",
   "scripts": {
-    "start": "node server.mjs"
+    "dev": "node tools/dev-server.mjs"
   }
 }
